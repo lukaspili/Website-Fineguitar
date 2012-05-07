@@ -13,7 +13,7 @@ require_once('functions.php');
 		<meta name="description" content="<?php echo $html_description;?>" />
 		<meta name="keywords" content="<?php echo $html_keywords;?>" />		
 		<meta name="generator" content="Open Classifieds <?php echo VERSION;?>" />
-		<link rel="icon" type="image/png" href="<?php echo SITE_URL;?>/themes/wpClassifieds/favicon.png" />
+		<link rel="icon shortcut" type="image/x-icon" href="<?php echo SITE_URL;?>/themes/wpClassifieds/favicon.ico" />
 	<?php if (isset($currentCategory) || isset($type) || isset($location) ){?>
 		<link rel="alternate" type="application/rss+xml" title="<?php _e("Latest Ads");?> 
 		<?php echo ucwords($currentCategory);?> <?php echo ucwords(getTypeName($type));?> <?php echo getLocationName($location);?>"
