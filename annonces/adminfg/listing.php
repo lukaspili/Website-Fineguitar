@@ -94,7 +94,7 @@ switch($rd) {
         
         $pag_title=$html_title." ".T_("Page")." ";
         
-        $pag_url="/adming2s/listing.php";
+        $pag_url="/adminfg/listing.php";
 
         //getting the url
         if(strlen(cG("s"))>=MIN_SEARCH_CHAR){//home with search

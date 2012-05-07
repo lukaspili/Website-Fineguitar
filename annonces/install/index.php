@@ -390,7 +390,7 @@ RewriteEngine on
 RewriteBase $rewritebase
 RewriteRule ^([0-9]+)$ index.php?page=$1 [L]
 RewriteRule ^install/$ install/ [L]
-RewriteRule ^adming2s/$ adming2s/index.php [L]
+RewriteRule ^adminfg/$ adminfg/index.php [L]
 RewriteRule ^rss/$ content/feed-rss.php [L]
 RewriteRule ^manage/$ content/item-manage.php [L]
 RewriteRule ^$new.htm content/item-new.php [L]
@@ -449,7 +449,7 @@ RewriteRule ^(.+)/(.+)-([0-9]+).htm$  item.php?category=$1&item=$3 [L]
 		$msg= "<p>".T_("Congratulations").". ".T_("Installation done").".</p>
 				<p><b>".T_("Please now erase the folder")." /install/</b> <br />
 				<a href=\"".$SITE_URL."\">".T_("Go to Your Website")."</a> | 
-				<a href=\"".$SITE_URL."/adming2s/\">Admin</a> (user: ".$_POST["ADMIN"]." pass: ".$_POST["ADMIN_PWD"].")</p>
+				<a href=\"".$SITE_URL."/adminfg/\">Admin</a> (user: ".$_POST["ADMIN"]." pass: ".$_POST["ADMIN_PWD"].")</p>
 				<p><a href=\"http://j.mp/ocdonate\">".T_("Make a donation").". ".T_("We really appreciate it")."</a></p>";
 		
         // notify new installation, you can remove this if you want to

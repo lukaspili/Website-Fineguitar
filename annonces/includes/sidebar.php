@@ -133,7 +133,7 @@ function sb_item_tools($beg,$end){//utils for admin
 				href="<?php echo itemManageURL();?>?post=<?php echo $idItem;?>&amp;pwd=<?php echo $itemPassword;?>&amp;action=delete">
 				<?php _e("Delete");?></a>
 			</li>
-			<li><a href="<?php echo SITE_URL;?>/adming2s/logout.php"><?php _e("Logout");?></a>
+			<li><a href="<?php echo SITE_URL;?>/adminfg/logout.php"><?php _e("Logout");?></a>
 			</li>
 		</ul>
 	<?php 
@@ -155,7 +155,7 @@ function sb_links($beg,$end){//links sitemap
 		        <li><a href="<?php echo SITE_URL;?>/content/site-map.php"><?php _e("Sitemap");?></a></li>
 		    <?php } ?>
 		    <li><a href="<?php echo SITE_URL."/".contactURL();?>"><?php _e("Contact");?></a></li>
-		    <li><a href="<?php echo SITE_URL;?>/adming2s/"><?php _e("Administrator");?></a></li>
+		    <li><a href="<?php echo SITE_URL;?>/adminfg/"><?php _e("Administrator");?></a></li>
 		</ul>
 	<?php 
 	echo $end;

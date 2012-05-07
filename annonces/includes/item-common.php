@@ -339,7 +339,7 @@ function deactivatePost($post_id,$post_password){//deactivate a post
         
         //show confirmation message or return to admin listing
         if (isset($_SESSION['admin']) && isset($_SESSION['ADMIN_QUERY_STRING'])){
-            $pag_url=SITE_URL."/adming2s/listing.php?rd=deactivate&".$_SESSION['ADMIN_QUERY_STRING'];
+            $pag_url=SITE_URL."/adminfg/listing.php?rd=deactivate&".$_SESSION['ADMIN_QUERY_STRING'];
             redirect($pag_url);//redirect to the admin listing
         } else
 		  echo "<div id='sysmessage'>".T_("Your Ad was successfully deactivated")."</div>";
@@ -353,7 +353,7 @@ function activatePost($post_id,$post_password){//activate a post
         
         //show confirmation message or return to admin listing
         if (isset($_SESSION['admin']) && isset($_SESSION['ADMIN_QUERY_STRING'])){
-            $pag_url=SITE_URL."adming2s/listing.php?rd=activate&".$_SESSION['ADMIN_QUERY_STRING'];
+            $pag_url=SITE_URL."adminfg/listing.php?rd=activate&".$_SESSION['ADMIN_QUERY_STRING'];
                 
             redirect($pag_url);//redirect to the admin listing
         } else
@@ -396,7 +396,7 @@ function spamPost($post_id,$post_password){//flag post as spam
 		
         //show confirmation message or return to admin listing
         if (isset($_SESSION['admin']) && isset($_SESSION['ADMIN_QUERY_STRING'])){
-            $pag_url=SITE_URL."/adming2s/listing.php?rd=spam&".$_SESSION['ADMIN_QUERY_STRING'];
+            $pag_url=SITE_URL."/adminfg/listing.php?rd=spam&".$_SESSION['ADMIN_QUERY_STRING'];
                 
             redirect($pag_url);//redirect to the admin listing
             die();
@@ -424,7 +424,7 @@ function deletePost($post_id,$post_password){//delete post
         
         //show confirmation message or return to admin listing
         if (isset($_SESSION['admin']) && isset($_SESSION['ADMIN_QUERY_STRING'])){
-            $pag_url=SITE_URL."/adming2s/listing.php?rd=delete&".$_SESSION['ADMIN_QUERY_STRING'];
+            $pag_url=SITE_URL."/adminfg/listing.php?rd=delete&".$_SESSION['ADMIN_QUERY_STRING'];
                 
             redirect($pag_url);//redirect to the admin listing
         } else
@@ -591,7 +591,7 @@ function editPost($post_id,$post_password){
 	
                     //show confirmation message or return to admin listing
                     if (isset($_SESSION['admin']) && isset($_SESSION['ADMIN_QUERY_STRING'])){
-                        $pag_url=SITE_URL."/adming2s/listing.php?rd=edit&".$_SESSION['ADMIN_QUERY_STRING'];
+                        $pag_url=SITE_URL."/adminfg/listing.php?rd=edit&".$_SESSION['ADMIN_QUERY_STRING'];
                             
                         redirect($pag_url);//redirect to the admin listing
                     } else

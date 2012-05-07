@@ -244,7 +244,7 @@ function accountCheck($key,$id=""){ //try to prevent duplicated accounts
     if ($total_pages>1){
 		$pag_title=$html_title." ".T_PAGE." ";
 		
-		$pag_url="/adming2s/accounts.php";
+		$pag_url="/adminfg/accounts.php";
 
 		//getting the url
 		if(strlen(cG("name"))>=1 || strlen(cG("email"))>=1){

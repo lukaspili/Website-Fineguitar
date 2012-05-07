@@ -56,12 +56,12 @@ if ($_POST){//if there's post action
         }
         //end ocaku change settings
 	    if (LANGUAGE!=$_POST["LANGUAGE"]){//changing the language generating new .htaccess
-	        jsRedirect(SITE_URL."/adming2s/htaccess.php?lang=".$_POST["LANGUAGE"]);
+	        jsRedirect(SITE_URL."/adminfg/htaccess.php?lang=".$_POST["LANGUAGE"]);
 	    }//end if language
 		else { 
 		    //echo "Updated";
 		    //require_once('../includes/admin/footer.php');
-		    jsRedirect(SITE_URL."/adming2s/settings.php?msg=Updated");
+		    jsRedirect(SITE_URL."/adminfg/settings.php?msg=Updated");
 		    die();
 		}
     }

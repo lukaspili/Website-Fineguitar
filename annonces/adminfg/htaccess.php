@@ -70,7 +70,7 @@ RewriteEngine on
 RewriteBase $rewritebase
 RewriteRule ^([0-9]+)$ index.php?page=$1 [L]
 RewriteRule ^install/$ install/index.php [L]
-RewriteRule ^adming2s/$ adming2s/index.php [L]
+RewriteRule ^adminfg/$ adminfg/index.php [L]
 RewriteRule ^rss/$ content/feed-rss.php [L]
 RewriteRule ^manage/$ content/item-manage.php [L]
 RewriteRule ^$new.htm content/item-new.php [L]
@@ -121,7 +121,7 @@ else {
     $msg=T_("The configuration file")." '/.htaccess' ".T_("is not writable").". ".T_("Change its permissions and try again");
     $succeed=false;
 }
-if ($succeed) jsRedirect(SITE_URL."/adming2s/settings.php?msg=".T_("Updated"));
+if ($succeed) jsRedirect(SITE_URL."/adminfg/settings.php?msg=".T_("Updated"));
 else echo $msg;
 die();
 ?>

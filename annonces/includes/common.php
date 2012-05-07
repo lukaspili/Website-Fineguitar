@@ -24,7 +24,7 @@ function cPR($name){//request post with some tweaks
 ////////////////////////////////////////////////////////////
 function cleanRequest(){ //clean all the post and get variables
     //we dont clean if admin and page settings.php
-    if (!isset($_SESSION['admin']) && $_SERVER['PHP_SELF']!='/adming2s/settings.php') {
+    if (!isset($_SESSION['admin']) && $_SERVER['PHP_SELF']!='/adminfg/settings.php') {
         $_POST   = array_map("filterData", $_POST);
 		$_GET    = array_map("filterData", $_GET);
 		$_COOKIE = array_map("filterData", $_COOKIE);

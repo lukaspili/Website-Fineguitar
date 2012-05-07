@@ -2,7 +2,7 @@
 ////////////////////////////////////////////////////////////
 function advancedSearchForm($admin=0){//used in  /search and in index.php when an advanced search is done
 	global $currentCategory;
-	if ($admin==1) $action=SITE_URL.'/adming2s/listing.php';
+	if ($admin==1) $action=SITE_URL.'/adminfg/listing.php';
 	else $action=SITE_URL;
 	?>	
 	<form action="<?php echo $action;?>" method="get"><table cellpadding="2" cellspacing="0">

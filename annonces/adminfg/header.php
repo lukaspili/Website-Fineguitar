@@ -10,7 +10,7 @@ require_once('../includes/functions.php');
 	<meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET;?>" />
 	<title><?php _e("Administration").' | '.SITE_NAME;?></title>
 	<meta name="generator" content="Open Classifieds <?php echo VERSION;?>" />
-	<link rel="stylesheet" type="text/css" href="<?php echo SITE_URL;?>/adming2s/style.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="<?php echo SITE_URL;?>/adminfg/style.css" media="screen" />
 	<link rel="shortcut icon" href="<?php echo SITE_URL;?>/favicon.ico" />
 	<script type="text/javascript" src="<?php echo SITE_URL;?>/includes/js/common.js"></script>	
 </head>

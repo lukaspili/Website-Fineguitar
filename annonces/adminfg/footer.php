@@ -3,7 +3,7 @@
 		if(strpos($_SERVER["REQUEST_URI"], "login.php")<=0){//do not display for login?>
 		<div id="sidebar">
 			<ul id="nav_sub">
-				<li><a href="<?php echo SITE_URL;?>/adming2s/index.php"><?php _e("Dashboard");?></a></li>
+				<li><a href="<?php echo SITE_URL;?>/adminfg/index.php"><?php _e("Dashboard");?></a></li>
 				<li><a href="listing.php"><?php _e("Listings");?></a></li>
 				<li><a href="categories.php"><?php _e("Categories");?></a></li>
 				<li><a href="locations.php"><?php _e("Locations");?></a></li>
