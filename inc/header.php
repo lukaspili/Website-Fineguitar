@@ -21,6 +21,6 @@ if ($LinkVersion == 'uk') {
 	</a>
 </div>
 
-<a href="index.php"><img src="img/logo.jpg" border="0" width="349" height="35" alt="FINEGUITAR" title="FINEGUITAR" style="margin: 12px 0px 15px 0px;" /></a><br />
+<a href="index.php"><img src="img/logo.jpg" border="0" width="349" height="35" alt="FINEGUITAR" title="FINEGUITAR" style="margin: 12px 0px 15px 105px;" /></a><br />
 <img src="img/pix_blanc.gif" border="0" width="100%" height="2" alt="" title="" /><br /><?php /* <img src="img/sep.gif" border="0" width="100%" height="4" alt="" title="" /> */ ?>
 <img src="img/pix.gif" border="0" width="1" height="49" alt="" title="" />
