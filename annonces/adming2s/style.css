@@ -1,0 +1,474 @@
+/* Reset -------------------------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent
+}
+body {
+	line-height:1
+}
+ol, ul {
+	list-style:none
+}
+blockquote, q {
+	quotes:none
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content:'';
+	content:none
+}
+:focus {
+	outline:0
+}
+ins {
+	text-decoration:none
+}
+del {
+	text-decoration:line-through
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0
+}
+
+/* General ---------------------------------------------------------------- */
+
+body {
+	font: normal 13px/20px Georgia, "Times New Roman", Times, serif;
+	color: #464646;
+	background: #EBEBEB;
+}
+h1 {
+	margin: 20px 0 20px 5px;
+	color:#474546;
+	font-size:26px;
+}
+h1 a {
+	color:#464646;
+}
+h1 a:hover {
+	color:#464646;
+	text-decoration:underline;
+}
+.title-first {
+	color: #fff;
+}
+.title-second {
+	color: #235c95;
+}
+h2 {
+	font-size: 16px;
+	line-height:16px;
+	margin-bottom: 20px;
+	color: #646464;
+	border-bottom: 1px solid #B8B8B8;
+	padding-bottom:10px;
+}
+h3 {
+	font-size: 16px;
+	margin-bottom: 5px;
+	font-weight: normal;
+	color: #333;
+	padding:0 5px;
+}
+.clear {
+	clear: both;
+}
+.settingsTitle {
+	cursor:pointer;
+	padding-bottom:5px;
+}
+.settingsTable {
+	display:none;
+}
+
+/* next is for Navigation Cookbook */
+
+a {
+	color: #30A4B1;
+	text-decoration:none;
+}
+a:hover {
+	color:#EF8E1D;
+}
+strong, b {
+	font-weight: bold;
+}
+em, i {
+	font-style: italic;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+/* Layout ----------------------------------------------------------------- */
+
+#container {
+	margin: 0 auto;
+}
+#container, #header, #content, #general, #footer {
+	width: 930px;
+}
+#header {
+	margin-bottom:30px;
+}
+#main {
+	border: 1px solid #B8B8B8;
+	background:#FFF;
+}
+#content_home {
+	width: 960px;
+	padding: 0 10px;
+}
+#content {
+	float: right;
+	width: 698px;
+	padding: 20px;
+}
+#sidebar {
+	float: left;
+	width: 189px;
+	border-right:1px solid #DDD;
+}
+#general {
+	clear: both;
+	border-top: 1px solid #ddd;
+	padding: 0;
+}
+#footer {
+	clear: both;
+	border-top: 1px solid #ddd;
+	padding: 20px 0;
+}
+
+/* Header ----------------------------------------------------------------- */
+
+#header h1 span {
+	font-size: 16px;
+}
+
+/* Main navigation -------------------------------------------------------- */
+
+#nav_main {
+	padding: 6px;
+	background: #464646;
+	height: 37px;
+}
+#nav_main li {
+	float: left;
+	height: 37px;
+}
+#nav_main li a {
+	float: left;
+	display: block;
+	height: 37px;
+	font-weight: bold;
+	font-size:12px;
+	line-height: 37px;
+	color: #FFFFFF;
+	padding: 0 14px;
+	margin-right: 6px;
+	text-transform:uppercase;
+}
+#nav_main li a:hover {
+	background: #30A4B1;
+}
+#nav_main li a.current {
+	background: #30A4B1;
+	color: #FFFFFF;
+}
+
+/* Sub navigation --------------------------------------------------------- */
+
+#nav_sub {
+	margin-bottom:30px;
+}
+#nav_sub li {
+	border-bottom: 1px solid #B8B8B8;
+}
+#nav_sub li a {
+	display: block;
+	color: #30A4B1;
+	background: #F7F7F7;
+	line-height: 15px;
+	padding: 7px 19px;
+}
+#nav_sub li a:hover {
+	background: #fdfcf6;
+}
+#nav_sub li a.current {
+	background: #FFFFFF;
+	color: #B15D30;
+}
+
+/* Footer ----------------------------------------------------------------- */
+
+#footer li {
+	padding: 0 10px;
+	list-style: none;
+	margin: 0;
+}
+#footer li.copyright {
+	float: right;
+	width: 380px;
+	text-align: right;
+}
+#footer li.credits {
+	float: left;
+	width: 380px;
+}
+
+/* Tables ------------------------------------------------------------------*/
+
+#main table {
+	border: 1px solid #B8B8B8;
+	width:100%;
+}
+#main table tr td {
+	background: #F7F7F7;
+	padding: 10px 20px;
+	border-bottom: 1px solid #B8B8B8;
+}
+#main table tr.odd td {
+	background: #FFFFFF;
+}
+#main table tr.thead td {
+	background: #D9D7D8;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:12px;
+	padding: 8px 20px;
+}
+#main table tr.thead:hover td {
+	background: #D9D7D8;
+}
+#main table tr:hover td {
+	background: #fdfcf6;
+}
+#main table .action {
+	text-align: right;
+	padding: 0 20px 0 10px;
+	color:#CCC;
+	font-size:12px;
+}
+#main table tr .action a {
+	margin: 0 4px;
+	text-decoration: none;
+	color: #30A4B1;
+	text-transform:uppercase;
+}
+#main table tr .action .edit {
+	color: #55a34a;
+}
+#main table tr .action .delete {
+	color: #a02b2b;
+}
+#main table tr:hover .action a:hover {
+	text-decoration: underline;
+}
+#main .desc {
+	margin-top:-15px;
+	margin-bottom:20px;
+}
+
+/* Screenshot ------------------------------------------------------------*/
+
+#screenshots {
+	display: block;
+	overflow: hidden;
+	width: 545px;
+}
+.screenshot {
+	cursor: pointer;
+	float: left;
+	width: 160px;
+	margin: 0 7px 7px 0;
+	padding: 6px;
+	border: 1px solid #eee;
+}
+.screenshot:hover {
+	border: 1px dashed #bbb;
+	color: #000;
+}
+.screenshot span {
+	display: block;
+	font-weight: bold;
+	padding: 2px 0 2px 1px;
+	height: 28px;
+	font-size: 11px;
+	line-height: 14px;
+	overflow: hidden;
+}
+
+/* Sidebar ------------------------------------------------------------*/
+
+#sidebar blockquote {
+	margin: 0 0 30px 0;
+	padding: 10px 20px;
+	background: #f7f7f7;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+#tools {
+	margin-bottom:30px;
+	border-top: 1px solid #B8B8B8;
+}
+#tools li {
+	border-bottom: 1px solid #B8B8B8;
+}
+#tools li a {
+	display: block;
+	color: #30A4B1;
+	background: #F7F7F7;
+	line-height: 15px;
+	padding: 7px 19px;
+}
+#tools li a:hover {
+	background: #fdfcf6;
+}
+
+/* Forms ------------------------------------------------------------*/
+
+#main fieldset {
+	border: 1px solid #B8B8B8;
+	padding: 19px;
+	margin: 0 0 20px 0;
+	background: #F7F7F7;
+	font-size:12px;
+}
+#main fieldset p {
+	margin: 0 0 14px 0;
+	float: left;
+	width: 100%;
+	line-height:25px;
+}
+#main fieldset label {
+	display: block;
+	width: 100%;
+	margin: 0 0 7px 0;
+	line-height: 12px;
+	font-weight:bold;
+}
+#main fieldset .text-long {
+	border: 1px solid #B8B8B8;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #464646;
+	padding: 5px 7px;
+	width: 264px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+#main fieldset .text-medium {
+	border: 1px solid #B8B8B8;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #464646;
+	padding: 5px 7px;
+	width: 124px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+#main fieldset .text-small {
+	border: 1px solid #B8B8B8;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #464646;
+	padding: 5px 7px;
+	width: 32px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+#main fieldset textarea {
+	border: 1px solid #B8B8B8;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #464646;
+	padding: 5px 7px;
+	width: 364px;
+	float: left;
+	margin: 0 10px 0 0;
+	height: 148px;
+	overflow: hidden;
+}
+#main fieldset select {
+	border: 1px solid #B8B8B8;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #464646;
+	padding: 5px 7px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+.button-submit {
+	border:1px solid #888;
+	background:#EF8E1D;
+	color:#FFF;
+	font-weight:bold;
+	padding:5px 10px;
+	text-transform:uppercase;
+}
+.button-cancel {
+	border:1px solid #888;
+	background:#D9D7D8;
+	color:#464646;
+	font-weight:bold;
+	padding:5px 10px;
+	text-transform:uppercase;
+}
+.form-tab {
+	background:#F7F7F7;
+	display:block;
+	font-weight:bold;
+	padding:7px 20px;
+	float:left;
+	font-size:13px;
+	margin-bottom:-1px;
+	border:1px solid #B8B8B8;
+	border-bottom:none;
+}
+
+/* Others ------------------------------------------------------------*/
+
+.logout {
+	float:right;
+	font-size:12px;
+	padding-top:15px;
+	color:#577F47;
+	text-transform:uppercase;
+	padding-right:5px;
+	letter-spacing:1px;
+}
+.add_link {
+	text-align:right;
+	font-size:14px;
+	line-height:30px;
+	padding-right:5px;
+}
+.dashboard {
+	border: 1px solid #B8B8B8;
+	padding: 10px 19px;
+	margin: 0 0 20px 0;
+	background: #F7F7F7;
+}
+
+/* Login ------------------------------------------------------------*/
+
+.login {
+	width:326px!important;
+}
+.login #header, .login #general, .login #footer {
+	width:326px!important;
+}
+.login #content {
+	width:286px!important;
+}
+.login #main fieldset {
+	border: 0px!important;
+	background: #FFFFFF!important;
+	padding: 19px 0px!important;
+	margin: 0!important;
+}

@@ -1,0 +1,4 @@
+- faite un "git clone git@github.com:SupinfoJavaLab/Geartoswap.git"
+- déplacer les fichiers dans "doc/racine" à la racine de votre dépot (attention aux fichiers cachés)
+- allez sur http://localhost/votre_vhost/install/index.php
+- installer
