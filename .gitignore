@@ -1,0 +1,11 @@
+/annonces/cache/
+/annonces/includes/config.php
+/annonces/install.lock
+/annonces/.htaccess
+/annonces/robots.txt
+/annonces/sitemap.xml.gz
+
+*.DS_Store
+sftp-config.json
+*.sublime-project
+*.sublime-workspace
