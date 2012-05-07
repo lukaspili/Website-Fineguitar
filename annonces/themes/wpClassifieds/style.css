@@ -53,7 +53,7 @@ a:focus, a:hover, a:active {outline: none;}
 
 /* Header */
 
-#header {padding-top:20px; padding-bottom:20px;}
+#header {padding-top:40px; padding-bottom:40px;}
 #logo h1, #logo h4 {/*float:left;*/ display:block;font-size: 36px;font-family: "Arial Rounded MT Bold", "Trebuchet MS", Arial, sans-serif;font-weight: bold;margin: 0px;padding: 0px 0px 5px 0px;text-decoration: none; letter-spacing:-3px;}
 #logo a:hover {text-decoration: none;}
 #logo {}
@@ -75,7 +75,7 @@ a:focus, a:hover, a:active {outline: none;}
 #top_dropdown {position:static;}
 #top_dropdown ul {font-size:13px;}
 #top_dropdown ul li {display: inline;float: left;z-index: 9999;}
-#top_dropdown ul li a {display: block;background: #A0955D;color: #FFF;padding: 8px 20px;text-decoration: none;font-weight:bold;margin-right:6px;-moz-border-radius-topleft: 5px;-khtml-border-radius-topleft: 5px;-webkit-border-top-left-radius: 5px;-moz-border-radius-topright: 5px;-khtml-border-radius-topright: 5px;-webkit-border-top-right-radius: 5px;}
+#top_dropdown ul li a {display: block;background: #262626;color: #FFF;padding: 8px 20px;text-decoration: none;font-weight:bold;margin-right:6px;-moz-border-radius-topleft: 5px;-khtml-border-radius-topleft: 5px;-webkit-border-top-left-radius: 5px;-moz-border-radius-topright: 5px;-khtml-border-radius-topright: 5px;-webkit-border-top-right-radius: 5px;}
 * html #top_dropdown ul li a { /*IE6 hack to get sub menu links to behave correctly*/display: inline-block;}
 #top_dropdown ul li a:link, #top_dropdown ul li a:visited {color: #FFF;}
 #top_dropdown ul li a:hover {background: #A2BF77;}
@@ -95,7 +95,7 @@ a:focus, a:hover, a:active {outline: none;}
 #top_cats li {display: inline;}
 #top_cats a {float: left;color: #FFF;margin: 5px 0;padding: 6px 8px;text-decoration: none;}
 #top_cats a:link, #top_cats a:visited, #top_cats a:active {color: #FFF;}
-#top_cats a:hover {background: #060606;color: white;}
+#top_cats a:hover {background: #262626;color: white;}
 #top_cats ul li ul {position: absolute;z-index: 9999;left: 0;top: 0;background: #76AF4C;visibility: hidden;margin-top:5px;padding-bottom:5px;border-top: 1px solid #BEE38B; font-size:11px;}
 #top_cats ul li ul li a {padding: 6px;padding-right: 8px;margin: 0;background: #76AF4C;margin: 5px 0 0 0;padding: 6px 8px;}
 #top_cats ul li ul li a:hover {background: #BEE38B;}
