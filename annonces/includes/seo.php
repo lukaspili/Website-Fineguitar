@@ -68,7 +68,6 @@ elseif ($_SERVER["REQUEST_URI"]=="/"||(isset($type)&&!isset($categoryName))||iss
 		if ($location!="") $html_title.=getLocationName($location).SEPARATOR;
 		//$html_title.=getCategories().SEPARATOR;
 		$html_title.=SITE_NAME;
-		$html_title.=" - annonces d'échange de matériel pour les musiciens";
 	//end title
 	if (SITE_DESCRIPTION!='') $html_description=SITE_DESCRIPTION;
 	else $html_description=$html_title;	
@@ -113,7 +112,6 @@ elseif(strpos($_SERVER["SCRIPT_NAME"], "imprint.php")>0){
 	$html_description=$html_title;	
 }else{
 	$html_title.=SITE_NAME;
-	$html_title.=" - annonces d'échange de matériel pour les musiciens";
 	$html_description=$html_title;
 }
 
