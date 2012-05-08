@@ -3,7 +3,7 @@ require_once('access.php');
 require_once('../includes/functions.php');
 
 
-$rewritebase=str_replace('http://'.$_SERVER["SERVER_NAME"],"",$_POST["SITE_URL"]);
+$rewritebase=str_replace('http://'.$_SERVER["SERVER_NAME"],"",SITE_URL);
 if ($_SERVER["SERVER_PORT"]!="80") $rewritebase=str_replace(":".$_SERVER["SERVER_PORT"],"",$rewritebase);
 if ($rewritebase=="") $rewritebase="/";
 
