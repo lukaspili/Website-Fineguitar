@@ -28,25 +28,37 @@ require('inc/session.php');
 <center>
 
 <?php require('inc/header.php'); ?>
-<h2>PETITES ANNONCES DEDIEES A L’UNIVERS DE LA LUTHERIE</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="700">
+	<tr>
+		<td valign="top" bgcolor="#FFFFFF">
+			<table border="0" cellpadding="0" cellspacing="5" width="700">
+				<tr>
+					<td align="center" bgcolor="#000000" style="padding: 6px; font-size: 15px; line-height: 17px;">PETITES ANNONCES DEDIEES A L’UNIVERS DE LA LUTHERIE</td>
+				</tr>
+				<tr>
+					<td align="left" valign="middle" bgcolor="#000000" style="padding: 40px 20px 40px 20px; font-size: 13px; line-height: 15px;">
+						<p>
+						<strong>Petites Annonces dédiées exclusivement à l’univers de la Lutherie</strong><br />
 
-<p>
-<strong>Petites Annonces dédiées exclusivement à l’univers de la Lutherie</strong><br />
-
-Le Portail des Luthier <strong>FineGuitar.net</strong>. propose aux luthiers & artisans ainsi qu’aux particuliers un  site internet rattaché, <strong>Annonces FineGuitar.net</strong>, service de petites annonces gratuites dédiées à la Lutherie.<br />
-<br />
-<strong>Annonces FineGuitar.net</strong> est modéré, maintenu et exploité professionnellement par l’équipe de <strong>FineGuitar.net</strong>.<br />
-<br />
-<strong>Annonces FineGuitar.net</strong> est exclusivement réservé aux dépôts et aux consultations de petites annonces gratuites relatives à la vente, l’achat ou l’échange d’instruments de musique (guitares, basses), d’équipements associés (amplificateurs, effets) et d’accessoires (micros, accessoires divers) dont les fabricants sont exclusivement des luthiers & artisans français ou étrangers, dans l’esprit du site <strong>FineGuitar.net</strong>, portail des luthiers & artisans français.<br />
-<br />
-Les particuliers comme les luthiers & artisans sont autorisés à utiliser tous les services du site.<br />
-<br />
-<strong>Annonces FineGuitar.net</strong> propose un lieu unique de rencontre des musiciens passionnés par les instruments et les équipements des luthiers & artisans français mais aussi étrangers.<br />
-<br />
-<strong>Annonces FineGuitar.net</strong> rassemble pratiquement tous les services nécessaires pour réaliser des ventes, achats et échanges, mais exclusivement dans l’univers de la Guitare et de la Basse des luthiers & artisans.<br />
-<br />
-Pour accéder au service Annonces <strong>FineGuitar.net</strong>, cliquer sur l’icône [PA] présente sur l’ensemble du site <strong>FineGuitar.net</strong>.
-</p>
+						Le Portail des Luthier <strong>FineGuitar.net</strong>. propose aux luthiers & artisans ainsi qu’aux particuliers un  site internet rattaché, <strong>Annonces FineGuitar.net</strong>, service de petites annonces gratuites dédiées à la Lutherie.<br />
+						<br />
+						<strong>Annonces FineGuitar.net</strong> est modéré, maintenu et exploité professionnellement par l’équipe de <strong>FineGuitar.net</strong>.<br />
+						<br />
+						<strong>Annonces FineGuitar.net</strong> est exclusivement réservé aux dépôts et aux consultations de petites annonces gratuites relatives à la vente, l’achat ou l’échange d’instruments de musique (guitares, basses), d’équipements associés (amplificateurs, effets) et d’accessoires (micros, accessoires divers) dont les fabricants sont exclusivement des luthiers & artisans français ou étrangers, dans l’esprit du site <strong>FineGuitar.net</strong>, portail des luthiers & artisans français.<br />
+						<br />
+						Les particuliers comme les luthiers & artisans sont autorisés à utiliser tous les services du site.<br />
+						<br />
+						<strong>Annonces FineGuitar.net</strong> propose un lieu unique de rencontre des musiciens passionnés par les instruments et les équipements des luthiers & artisans français mais aussi étrangers.<br />
+						<br />
+						<strong>Annonces FineGuitar.net</strong> rassemble pratiquement tous les services nécessaires pour réaliser des ventes, achats et échanges, mais exclusivement dans l’univers de la Guitare et de la Basse des luthiers & artisans.<br />
+						<br />
+						Pour accéder au service Annonces <strong>FineGuitar.net</strong>, cliquer sur l’icône [PA] présente sur l’ensemble du site <strong>FineGuitar.net</strong>.
+						</p>
+			</tr>
+			</table>
+		</td>
+	</tr>
+</table>
 <?php require('inc/footer.php'); ?>
 <?php require('inc/nav_' . $_SESSION['lang'] . '.php'); ?>
 
