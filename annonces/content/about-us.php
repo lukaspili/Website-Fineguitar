@@ -5,37 +5,19 @@ require_once('../includes/header.php');
 <h2>
 	Qui sommes nous
 </h2>
-
+<br />
 <p>
-	Your privacy is very important to us. Accordingly, we have developed this Policy in order for you to understand how we collect, use, communicate and disclose and make use of personal information. The following outlines our Privacy Policy.
-</p>
-
-<ul>
-	<li>
-		Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.
-	</li>
-	<li>
-		We will collect and use of personal information solely with the objective of fulfilling those purposes specified by us and for other compatible purposes, unless we obtain the consent of the individual concerned or as required by law.		
-	</li>
-	<li>
-		We will only retain personal information as long as necessary for the fulfillment of those purposes. 
-	</li>
-	<li>
-		We will collect personal information by lawful and fair means and, where appropriate, with the knowledge or consent of the individual concerned. 
-	</li>
-	<li>
-		Personal data should be relevant to the purposes for which it is to be used, and, to the extent necessary for those purposes, should be accurate, complete, and up-to-date. 
-	</li>
-	<li>
-		We will protect personal information by reasonable security safeguards against loss or theft, as well as unauthorized access, disclosure, copying, use or modification.
-	</li>
-	<li>
-		We will make readily available to customers information about our policies and practices relating to the management of personal information. 
-	</li>
-</ul>
-
-<p>
-	We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained. 
+<strong><a href="<?php echo SITE_URL; ?>">Annonces FineGuitar.net</a></strong>, le service de petites annonces gratuites dédiées à la Lutherie est complémentaire aux services du Portail des Luthier <strong><a href="<?php echo SITE_URL; ?>">FineGuitar.net</a></strong>.<br />
+<br />
+<strong><a href="<?php echo SITE_URL; ?>">Annonces FineGuitar.net</a></strong> est modéré, maintenu et exploité professionnellement par l’équipe de <strong><a href="<?php echo SITE_URL; ?>">FineGuitar.net</a></strong>.<br />
+<br />
+<strong><a href="<?php echo SITE_URL; ?>">Annonces FineGuitar.net</a></strong> est exclusivement réservé aux dépôts et aux consultations de petites annonces gratuites relatives à la vente, l’achat ou l’échange d’instruments de musique (guitares, basses), d’équipements associés (amplificateurs, effets) et d’accessoires (micros, accessoires divers) dont les fabricants sont exclusivement des luthiers & artisans français ou étrangers, dans l’esprit du site <strong><a href="<?php echo SITE_URL; ?>">FineGuitar.net</a></strong>, portail des luthiers & artisans français.<br />
+<br />
+Les particuliers comme les luthiers & artisans sont autorisés à utiliser tous les services du site.<br />
+<br />
+<strong><a href="<?php echo SITE_URL; ?>">Annonces FineGuitar.net</a></strong> propose un lieu unique de rencontre des musiciens passionnés par les instruments et les équipements des luthiers & artisans français mais aussi étrangers.<br />
+<br />
+<strong><a href="<?php echo SITE_URL; ?>">Annonces FineGuitar.net</a></strong> rassemble pratiquement tous les services nécessaires pour réaliser des ventes, achats et échanges, mais exclusivement dans l’univers de la Guitare et de la Basse des luthiers & artisans.
 </p>
 
 <?php
