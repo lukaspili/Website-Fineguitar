@@ -6,6 +6,8 @@ require_once('../includes/header.php');
 	Mentions légales
 </h2>
 
+<br />
+
 <p>
 	Le Site <strong><a href="<?php echo SITE_URL; ?>">FineGuitar.net</a></strong>, Portail des Luthiers & Artisans Français, est la propriété de la Société SmarterBizBox SARL, au capital de 120 000 euros, immatriculée au RCS de Paris sous le numéro 524 590 692 00017 dont le siège social se situe au 231, rue La Fayette - 75010 Paris. Elle est exclusivement propriétaire, exploitante et responsable du présent Site Internet <strong><a href="<?php echo SITE_URL; ?>">FineGuitar.net</a></strong>.
 </p><br />
