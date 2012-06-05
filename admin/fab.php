@@ -40,6 +40,8 @@ if (isset($HTTP_GET_VARS['selection']) && ($HTTP_GET_VARS['selection'] != '')) {
 	$PrinPays = '';
 	$PrintEmail = '';
 	$PrintTel = '';
+	$PrintEmailDirect = '';
+	$PrintTelDirect = '';	
 	$PrintDescription = '';
 	$PrintDescriptionUK = '';
 	$PrintLien = '';
@@ -53,7 +55,7 @@ if (isset($HTTP_GET_VARS['selection']) && ($HTTP_GET_VARS['selection'] != '')) {
 	$PrintMontant = '';
 	$PrintGestion = '';
 	$PrintHistorique = '';
-	$SelectData = mysql_query('SELECT Id_fabricant, Nom_fabricant, Adresse_fabricant, CP_fabricant, Pays_fabricant, Email_fabricant, Tel_fabricant, Logo_fabricant, Portrait_fabricant, Description_fabricant, DescriptionUK_fabricant, Lien_fabricant, Video1_fabricant, Video2_fabricant, Video3_fabricant, Video4_fabricant, Publication_fabricant, Payant_fabricant, Montant_fabricant, Date_fabricant, Visible_fabricant, Gestion_fabricant, Historique_fabricant FROM fabricant WHERE Id_fabricant="' . $HTTP_GET_VARS['selection'] . '"');
+	$SelectData = mysql_query('SELECT Id_fabricant, Nom_fabricant, Adresse_fabricant, CP_fabricant, Pays_fabricant, Email_fabricant, Tel_fabricant, Logo_fabricant, Portrait_fabricant, Description_fabricant, DescriptionUK_fabricant, Lien_fabricant, Video1_fabricant, Video2_fabricant, Video3_fabricant, Video4_fabricant, Publication_fabricant, Payant_fabricant, Montant_fabricant, Date_fabricant, Visible_fabricant, Gestion_fabricant, Historique_fabricant, phone_direct, mail_direct FROM fabricant WHERE Id_fabricant="' . $HTTP_GET_VARS['selection'] . '"');
 	if (mysql_num_rows($SelectData) != 0) {
 		$CheckData = mysql_fetch_array($SelectData);
 		
@@ -64,6 +66,8 @@ if (isset($HTTP_GET_VARS['selection']) && ($HTTP_GET_VARS['selection'] != '')) {
 		$PrintPays = $CheckData['Pays_fabricant'];
 		$PrintEmail = $CheckData['Email_fabricant'];
 		$PrintTel = $CheckData['Tel_fabricant'];
+		$PrintEmailDirect = $CheckData['mail_direct'];
+		$PrintTelDirect = $CheckData['phone_direct'];
 		$PrintLogo = $CheckData['Logo_fabricant'];
 		$PrintPortrait = $CheckData['Portrait_fabricant'];
 		$PrintDescription = $CheckData['Description_fabricant'];
@@ -371,7 +375,7 @@ if ((isset($HTTP_GET_VARS['action']) && ($HTTP_GET_VARS['action'] == 'inscriptio
 	if ($checkError == '0') {
 		$DateVar = substr($_POST['date'],6,4)."-".substr($_POST['date'],3,2)."-".substr($_POST['date'],0,2);
 		if ($HTTP_GET_VARS['action'] == 'inscription') {
-			$InsertData = mysql_query("INSERT INTO fabricant (Nom_fabricant, Adresse_fabricant, CP_fabricant, Pays_fabricant, Email_fabricant, Tel_fabricant, Logo_fabricant, Portrait_fabricant, Description_fabricant, DescriptionUK_fabricant, Lien_fabricant, Video1_fabricant, Video2_fabricant, Video3_fabricant, Video4_fabricant, Publication_fabricant, Payant_fabricant, Montant_fabricant, Date_fabricant, Visible_fabricant, Gestion_fabricant, Historique_fabricant) VALUES ('" . $_POST['nom'] . "','" . $_POST['adresse'] . "','" . $_POST['cp'] . "','" . $_POST['pays'] . "','" . $_POST['email'] . "','" . $_POST['tel'] . "','" . $IllusLogo . "','" . $IllusPortrait . "','" . $_POST['description'] . "','" . $_POST['descriptionuk'] . "','" . $_POST['lien'] . "','" . $_POST['video1'] . "','" . $_POST['video2'] . "','" . $_POST['video3'] . "','" . $_POST['video4'] . "','" . $_POST['pub'] . "','" . $_POST['ref'] . "','" . $_POST['montant'] . "','" . $DateVar . "', '" . $_POST['visible'] . "', '" . $_POST['gestion'] . "', '" . $_POST['historique'] . "')");
+			$InsertData = mysql_query("INSERT INTO fabricant (Nom_fabricant, Adresse_fabricant, CP_fabricant, Pays_fabricant, Email_fabricant, Tel_fabricant, Logo_fabricant, Portrait_fabricant, Description_fabricant, DescriptionUK_fabricant, Lien_fabricant, Video1_fabricant, Video2_fabricant, Video3_fabricant, Video4_fabricant, Publication_fabricant, Payant_fabricant, Montant_fabricant, Date_fabricant, Visible_fabricant, Gestion_fabricant, Historique_fabricant) VALUES ('" . $_POST['nom'] . "','" . $_POST['adresse'] . "','" . $_POST['cp'] . "','" . $_POST['pays'] . "','" . $_POST['email'] . "','" . $_POST['tel'] . "','" . $IllusLogo . "','" . $IllusPortrait . "','" . $_POST['description'] . "','" . $_POST['descriptionuk'] . "','" . $_POST['lien'] . "','" . $_POST['video1'] . "','" . $_POST['video2'] . "','" . $_POST['video3'] . "','" . $_POST['video4'] . "','" . $_POST['pub'] . "','" . $_POST['ref'] . "','" . $_POST['montant'] . "','" . $DateVar . "', '" . $_POST['visible'] . "', '" . $_POST['gestion'] . "', '" . $_POST['historique'] . "', '" .   $_POST['phone_direct']  . "', '" . $_POST['mail_direct']  . "')");
 			$InsertRetour = '<span class="rouge">LE FABRICANT ' . $_POST["nom"] . ' A &Eacute;T&Eacute; AJOUT&Eacute;</span>';
 		}
 		if ($HTTP_GET_VARS['action'] == 'modification') {
@@ -388,7 +392,7 @@ if ((isset($HTTP_GET_VARS['action']) && ($HTTP_GET_VARS['action'] == 'inscriptio
 				$PrintPortraitBDD = '';
 			}
 			
-			$UpdateData = mysql_query('UPDATE fabricant SET Nom_fabricant="' . $_POST['nom'] . '", Adresse_fabricant="' . $_POST['adresse'] . '", CP_fabricant="' . $_POST['cp'] . '", Pays_fabricant="' . $_POST['pays'] . '", Email_fabricant="' . $_POST['email'] . '", Tel_fabricant="' . $_POST['tel'] . '"' . $PrintLogoBDD . '' . $PrintPortraitBDD . ', Description_fabricant="' . $_POST['description'] . '", DescriptionUK_fabricant="' . $_POST['descriptionuk'] . '", Lien_fabricant="' . $_POST['lien'] . '", Video1_fabricant="' . $_POST['video1'] . '", Video2_fabricant="' . $_POST['video2'] . '", Video3_fabricant="' . $_POST['video3'] . '", Video4_fabricant="' . $_POST['video4'] . '", Publication_fabricant="' . $_POST['pub'] . '", Payant_fabricant="' . $_POST['ref'] . '", Montant_fabricant="' . $_POST['montant'] . '", Date_fabricant="' . $DateVar . '", Visible_fabricant="' . $_POST['visible'] . '", Gestion_fabricant="' . $_POST['gestion'] . '", Historique_fabricant="' . $_POST['historique'] . '" WHERE Id_fabricant="' . $_POST['id'] . '"');
+			$UpdateData = mysql_query('UPDATE fabricant SET Nom_fabricant="' . $_POST['nom'] . '", Adresse_fabricant="' . $_POST['adresse'] . '", CP_fabricant="' . $_POST['cp'] . '", Pays_fabricant="' . $_POST['pays'] . '", Email_fabricant="' . $_POST['email'] . '", Tel_fabricant="' . $_POST['tel'] . '"' . $PrintLogoBDD . '' . $PrintPortraitBDD . ', Description_fabricant="' . $_POST['description'] . '", DescriptionUK_fabricant="' . $_POST['descriptionuk'] . '", Lien_fabricant="' . $_POST['lien'] . '", Video1_fabricant="' . $_POST['video1'] . '", Video2_fabricant="' . $_POST['video2'] . '", Video3_fabricant="' . $_POST['video3'] . '", Video4_fabricant="' . $_POST['video4'] . '", Publication_fabricant="' . $_POST['pub'] . '", Payant_fabricant="' . $_POST['ref'] . '", Montant_fabricant="' . $_POST['montant'] . '", Date_fabricant="' . $DateVar . '", Visible_fabricant="' . $_POST['visible'] . '", Gestion_fabricant="' . $_POST['gestion'] . '", Historique_fabricant="' . $_POST['historique'] .          '", mail_direct="' . $_POST['mail_direct'] . '", phone_direct="' . $_POST['phone_direct'] .        '" WHERE Id_fabricant="' . $_POST['id'] . '"');
 			
 			$InsertRetour = '<span class="rouge">LE FABRICANT ' . $_POST["nom"] . ' A &Eacute;T&Eacute; MODIFI&Eacute;</span>';
 			$PrintAction = 'inscription';
@@ -541,6 +545,16 @@ else {
 											<td style="font-size: 12px; line-height: 14px;">T&eacute;l&eacute;phone<?php echo ' ' . $ErrorTel; ?></td>
 											<td colspan="2"><input type="text" name="tel" value="<?php echo $PrintTel; ?>" /></td>
 										</tr>
+
+										<tr>
+											<td style="font-size: 12px; line-height: 14px;">Email direct</td>
+											<td colspan="2"><input type="text" name="mail_direct" value="<?php echo $PrintEmailDirect; ?>" /></td>
+										</tr>
+										<tr>
+											<td style="font-size: 12px; line-height: 14px;">T&eacute;l&eacute;phone direct</td>
+											<td colspan="2"><input type="text" name="phone_direct" value="<?php echo $PrintTelDirect; ?>" /></td>
+										</tr>
+
 										<tr>
 											<td style="font-size: 12px; line-height: 14px;">Logo (illus)<?php echo ' ' . $ErrorLogo; ?></td>
 											<td colspan="2"><input type="file" name="logo" />

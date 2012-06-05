@@ -457,29 +457,38 @@ if (mysql_num_rows($SelectContent) != 0) {
 				<tr height="503">
 					<td align="left" valign="top" colspan="3" bgcolor="#000000" style="padding: 10px; font-size: 13px; line-height: 15px;"><?php echo $PrintPortrait . $PrintDescription; ?></td>
 				</tr>
+			</table>
+			<table border="0" cellpadding="0" cellspacing="5" width="700" style="margin-top: -5px;">
 				<tr>
-					<td bgcolor="#000000">
+					<td bgcolor="#000000" width="25%">
 						<table border="0" cellpadding="10" cellspacing="0" width="100%">
 							<tr>
 								<td align="center" valign="middle"><?php echo $PrintVideo; ?></td>
 							</tr>
 						</table>
 					</td>
-					<td bgcolor="#000000">
+					<td bgcolor="#000000" width="25%">
 						<table border="0" cellpadding="10" cellspacing="0" width="100%">
 							<tr>
 								<td align="center" valign="middle"><?php echo $PrintLien; ?></td>
 							</tr>
 						</table>
 					</td>
-					<td bgcolor="#000000">
+					<td bgcolor="#000000" width="25%">
 						<table border="0" cellpadding="10" cellspacing="0" width="100%">
 							<tr>  
 								<td align="center" valign="middle"><a href="contact.php<?php echo $URLVarF . $URLVarSF . '&id=' . $HTTP_GET_VARS['id']; ?>" style="font-size: 11px; line-height: 18px;">Contact</a></td>
 							</tr>
 						</table>
 					</td>
-				</tr>
+					<td bgcolor="#000000" width="25%">
+						<table border="0" cellpadding="10" cellspacing="0" width="100%">
+							<tr>  
+								<td align="center" valign="middle"><a href="more.php<?php echo $URLVarF . $URLVarSF . '&id=' . $HTTP_GET_VARS['id']; ?>" style="font-size: 11px; line-height: 18px;">En savoir plus...</a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>			
 			</table>
 		</td>
 		<td align="left" valign="top" width="150" id="fabd" style="padding: 0px 0px 0px 10px; font-size: 11px; line-height: 15px;"><?php echo $PrintFab2; ?></td>
