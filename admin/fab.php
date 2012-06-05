@@ -646,7 +646,98 @@ else {
 						</table>
 						
 						</form><br />
-
+						
+						<?php if(null != $HTTP_GET_VARS['selection'] && $HTTP_GET_VARS['selection'] != ""){ ?>
+							
+							<?php
+								$id = intval($HTTP_GET_VARS['selection']);
+							
+								$articles = array();
+								$result = mysql_query("SELECT * FROM articles WHERE fabricant_id=$id");
+								while($row = mysql_fetch_assoc($result)){
+									$articles[]= $row;
+								}
+								
+								$videos = array();
+								$result = mysql_query("SELECT * FROM videos WHERE fabricant_id=$id");
+								while($row = mysql_fetch_assoc($result)){
+									$videos[]= $row;
+								}
+							
+							?>
+							
+							<span>Articles :</span>
+							<ul>
+								<?php foreach($articles as $article){
+									echo "<li><a href=\"" . $article['url'] ."\" target=\"_blank\">" . $article['name'] . "</a> <a href=\"/admin/articles.php?id=" . $article['id'] . "&frabricant_id=" . $id . "&action=remove\">Supprimer</a></li>";
+								}?>
+							</ul>
+							
+							<br />
+							
+							<span>Ajouter un article</span>
+							<form name="class" action="/admin/articles.php" method="post">
+								<input type="hidden" name="frabricant_id" value="<?php echo $HTTP_GET_VARS['selection'] ?>">
+								<table border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td class="intit" style="padding-top: 20px; font-size: 12px; line-height: 14px;">
+										<table border="0" cellpadding="0" cellspacing="10">
+											<tr>
+												<td style="font-size: 12px; line-height: 14px;">Titre</td>
+												<td colspan="2"><input type="text" name="name" value="" /></td>
+											</tr>
+											<tr>
+												<td style="font-size: 12px; line-height: 14px;">URL</td>
+												<td colspan="2"><input type="text" name="url" value="" /></td>
+											</tr>										
+											<tr>
+												<td></td>
+												<td colspan="2"><input type="submit" value="Valider" class="btnvalid" style="float: left;" /></td>
+											</tr>						
+										</table>
+									</td>
+								</tr>
+								</table>
+							</form>
+							
+							<br />
+							
+							<span>Vidéos :</span>
+							<ul>
+								<?php foreach($videos as $video){
+									echo "<li><a href=\"" . $video['url'] ."\" target=\"_blank\">" . $video['name'] . "</a> <a href=\"/admin/videos.php?id=" . $video['id'] . "&frabricant_id=" . $id. "&action=remove\">Supprimer</a></li>";
+								}?>
+							</ul>							
+							
+							<br />
+							
+							<span>Ajouter une vidéo</span>
+							<form name="class" action="/admin/videos.php" method="post">
+								<input type="hidden" name="frabricant_id" value="<?php echo $HTTP_GET_VARS['selection'] ?>">
+								<table border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td class="intit" style="padding-top: 20px; font-size: 12px; line-height: 14px;">
+										<table border="0" cellpadding="0" cellspacing="10">
+											<tr>
+												<td style="font-size: 12px; line-height: 14px;">Titre</td>
+												<td colspan="2"><input type="text" name="name" value="" /></td>
+											</tr>
+											<tr>
+												<td style="font-size: 12px; line-height: 14px;">URL</td>
+												<td colspan="2"><input type="text" name="url" value="" /></td>
+											</tr>										
+											<tr>
+												<td></td>
+												<td colspan="2"><input type="submit" value="Valider" class="btnvalid" style="float: left;" /></td>
+											</tr>						
+										</table>
+									</td>
+								</tr>
+								</table>
+							</form>						
+						
+						<?php } ?>
+						
 					</td>
 				</tr>
 			</table>
