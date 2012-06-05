@@ -199,6 +199,17 @@ if (mysql_num_rows($SelectContent) != 0) {
 <?php require('inc/footer.php'); ?>
 <?php require('inc/nav_' . $_SESSION['lang'] . '.php'); ?>
 
+
+<?php
+	$result = mysql_query('SELECT Nom_fabricant AS name FROM fabricant LIMIT 300');
+	
+	while($row = mysql_fetch_assoc($result)){
+		//echo("<span style='float: left; width: 10%;'>" . $row['name'] . "</span>");
+	}
+	
+?>
+
+
 </center>
 </body>
 </html>

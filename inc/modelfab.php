@@ -37,7 +37,10 @@ if (ISSET($HTTP_GET_VARS['f']) && $HTTP_GET_VARS['f'] != '' && $HTTP_GET_VARS['f
 			$AddSearch = ' AND modele.Sous_famille_modele = "' . $CheckModele['Id_sous_famille'] . '"';
 		}
 		$SelectFab = mysql_query('SELECT DISTINCT(Nom_fabricant), Id_fabricant FROM fabricant LEFT JOIN modele ON fabricant.Id_fabricant = modele.Fabricant_modele WHERE fabricant.Visible_fabricant = "1" AND modele.Famille_modele = "' . $CheckModele['Id_famille'] . '"' . $AddSearch . ' ORDER BY Nom_fabricant ASC');
-		if (mysql_num_rows($SelectFab) != 0) {
+		
+		$rows_count = mysql_num_rows($SelectFab);
+		
+		if ($rows_count != 0) {
 			$IncVar = '0';
 			while ($CheckFab = mysql_fetch_object($SelectFab)) {
 				$IncVar++;
@@ -52,7 +55,7 @@ if (ISSET($HTTP_GET_VARS['f']) && $HTTP_GET_VARS['f'] != '' && $HTTP_GET_VARS['f
 					$CheckNav = '';
 				}
 				
-				if ($IncVar <= '48') {
+				if ($IncVar <= ($rows_count / 2)) {
 					$PrintFab1 .= '<a href="fabricant.php' . $URLVarF . $URLVarSF . '&id=' . $CheckFab->Id_fabricant . '"' . $CheckNav .'>' . $CheckFab->Nom_fabricant . '</a><br />';
 				}
 				else {
