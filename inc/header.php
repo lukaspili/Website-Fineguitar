@@ -19,6 +19,9 @@ if ($LinkVersion == 'uk') {
 	<a href="http://www.facebook.com/pages/FineGuitarNet-1er-Portail-des-Luthiers-Fran%C3%A7ais/268051626562503" target="_blank">
 		<img src="img/picto_fb.gif" border="0" alt="Fineguitar sur Facebook" title="Fineguitar sur Facebook" />
 	</a>
+	<a href="http://www.shirtcity.fr/FR_fr/shop/fineguitar-wear/" target="_blank">
+		<img src="img/picto_tshirt.jpg" border="0" alt="Fineguitar Tshirt" title="Fineguitar Tshirt" />
+	</a>
 </div>
 
 <a href="index.php"><img src="img/logo.jpg" border="0" width="349" height="35" alt="FINEGUITAR" title="FINEGUITAR" style="margin: 12px 0px 15px 105px;" /></a><br />
